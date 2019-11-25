@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Backpacks</title>
+    <link href="css/all.css" rel="stylesheet"> 
+    <link href="reset.css" rel="stylesheet" >
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="" class="header__logo">backpack</a>
+            <button class="header__cart">Корзина</button>      
+        </header>
+        <section class="products">
+            <h1 class="title products__title">Магазин рюкзаков</h1>
+            <div class="products-list">
+            </div>
+        </section>
+        <footer class="footer">
+            <p class="footer__copyright">Изображения взяты с сайта pngimg.com</p>
+        </footer>
+    </div>
+    <div class="modal-container modal-container-cart invisible">
+        <section class="cart-modal">
+            <div class="cart-modal-head">
+                <h1 class="title cart-modal__title">Корзина</h1>
+                <a href="" class="cart-modal__close">
+                    <i class="far fa-times-circle"></i>
+                </a>
+            </div>
+            <div class="cart-modal-items">
+            </div>
+            <p class="cart-modal__total-title">
+                Итого: 
+                <span class="cart-modal__total-price">200 р.</span>
+            </p>
+            <button class="cart-modal__btn">Подтвердить заказ (демо)</button>
+        </section>
+    </div>
+    <div class="modal-container modal-container-success invisible">
+        <section class="success-modal">
+            <i class="fas fa-check success-modal__icon"></i>
+            <h1 class="success-modal__title">Ваш заказ принят! <br> Ожидайте звонка от оператора в течении 5 минут</h1>
+            <button class="success-modal__btn">Ок</button>           
+        </section>
+    </div>
+    <div class="alert-success invisible-alert">
+        <p class="alert-success__text">
+            Товар добавлен в корзину
+        </p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
